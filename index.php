@@ -10,10 +10,10 @@ $homeResponse = $client->sendRequest(
     $messageFactory->createRequest('GET', 'http://httplug.io')
 );
 
-var_dump($homeResponse->getStatusCode()); // 200, hopefully
+var_dump($homeResponse->getStatusCode()); 
 
 $missingPageResponse = $client->sendRequest(
     $messageFactory->createRequest('GET', 'http://httplug.io/missingPage')
 );
 
-var_dump($missingPageResponse->getStatusCode()); // 404 ?> 
+var_dump($missingPageResponse->getStatusCode());  ?> 
